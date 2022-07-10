@@ -5,4 +5,5 @@ the quality of the game being played.
 - Selinium chromedriver used to parse through Stubhub pages and gather information on the game date, game price, and teams while associating it all to a collection date
 - Beautiful Soup used to gather info on the current premier league table to identify the average ranking of teams playing
 - Pandas and Numpy used to store game date, price and teams associated with data collection date
+- Current rankings will be combined with historical rankings to provide a most accurate and dynamic system for properly rating games near the beginning of the season
 - Data will be graphed in a 3d scatterplot depicting the relationship between these 3 metrics in real time
