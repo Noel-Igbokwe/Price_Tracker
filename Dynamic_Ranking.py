@@ -1,7 +1,6 @@
 import pandas as pd
 import datetime as dt
 
-
 def make_ranking(team_name, current_pos):
     historic_table = pd.read_csv("PL_table(historical).csv")
     index = historic_table.loc[historic_table['Team'] == team_name].index[0]
