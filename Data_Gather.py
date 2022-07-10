@@ -9,7 +9,6 @@ import Data_Manage
 import functions_temp as ft
 import pandas as pd
 import numpy as np
-import Dynamic_Ranking as dr
 
 
 def get_table(is_initialized, PL_table=pd.DataFrame(columns=['Team', datetime.datetime.today().strftime('%Y-%m-%d')])):
@@ -30,11 +29,11 @@ def get_table(is_initialized, PL_table=pd.DataFrame(columns=['Team', datetime.da
 
         if is_initialized:
             index = PL_table.loc[(PL_table['Team'] == team_name)].index[0]
-            PL_table.at[index, datetime.datetime.today().strftime('%Y-%m-%d')] = dr.make_ranking(team_name, team_pos)
+            PL_table.at[index, datetime.datetime.today().strftime('%Y-%m-%d')] = Data_Manage.make_ranking(team_name, team_pos)
         else:
             a = len(PL_table)
             PL_table.at[a, 'Team'] = team_name
-            PL_table.at[a, datetime.datetime.today().strftime('%Y-%m-%d')] = dr.make_ranking(team_name, team_pos)
+            PL_table.at[a, datetime.datetime.today().strftime('%Y-%m-%d')] = Data_Manage.make_ranking(team_name, team_pos)
 
     return PL_table
 

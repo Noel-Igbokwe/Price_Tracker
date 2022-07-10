@@ -5,10 +5,7 @@
 import selenium
 
 import Data_Gather
-import Data_Manage
-import functions_temp
 import pandas as pd
-import csv
 import datetime
 import numpy as np
 
