@@ -1,4 +1,4 @@
-# Ticket_Pricer
+# Price_Tracker
 
 This program aims to better understand the changes in price of Premier League tickets over time and in respect to 
 the quality of the game being played. 
