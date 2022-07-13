@@ -20,7 +20,7 @@ def convert_matchname(names):
 
 
 def convert_price(price):
-    return int(price.replace("€", "").replace(",", ""))
+    return int(price.replace("€", "").replace("£", "").replace(",", ""))
 
 
 def convert_date_from_str(date):
