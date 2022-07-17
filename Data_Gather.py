@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 
 
+
 def get_table(is_initialized, PL_table=pd.DataFrame(columns=['Team', datetime.datetime.today().strftime('%Y-%m-%d')])):
     ssUrl = "https://www.skysports.com/premier-league-table"
     page = requests.get(ssUrl)
