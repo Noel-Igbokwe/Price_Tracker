@@ -55,7 +55,7 @@ def track_price(is_initialized, matchdf=pandas.DataFrame(data=None, columns=['Da
     while True:
         try:
             driver.find_element(By.XPATH, "//button[normalize-space()='See more events']").click()
-            time.sleep(1)
+            time.sleep(1.5)
         except:
             break
 
