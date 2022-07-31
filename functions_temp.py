@@ -37,3 +37,7 @@ def eval_code(code):
     compiled = compile(fixed, '<string>', 'eval')
     compiled = eval(compiled)
     return compiled
+
+def convert_string_to_date(date):
+    return datetime.datetime.strptime(date, "%Y-%m-%d")
+
