@@ -49,8 +49,9 @@ fig = px.scatter_3d(Data_df,
                     x="Days until game",
                     y="Price",
                     z="Rating",
-                    color=(1 / Data_df["Rating"] / Data_df["Days until game"] / Data_df["Price"]),
+                    color=(Data_df["Rating"] * Data_df["Price"]),
                     title=(team + " ticket pricing"))
+
 fig.show()
 
 
