@@ -8,9 +8,9 @@ def make_ranking(team_name, current_pos):
     index = historic_table.loc[historic_table['Team'] == team_name].index[0]
 
     historic_ranking = (historic_table.at[index, "2020-2021"] * 0.25) + (historic_table.at[index, "2021-2022"] * 0.75)
-    td = (dt.datetime.today() - dt.datetime(2022, 8, 5)).days
+    td = (dt.datetime.today() - dt.datetime(2022, 8, 4)).days
 
-    total_days = (dt.datetime(2022, 11, 12) - dt.datetime(2022, 8, 5)).days
+    total_days = (dt.datetime(2022, 11, 12) - dt.datetime(2022, 8, 4)).days
     percent = td / total_days
     # making the historical ranking have a minimum influence of 0.25
     if percent > 0.75:
